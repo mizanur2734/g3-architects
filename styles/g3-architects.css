@@ -1,8 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.work-sans-font{
+.work-sans-font {
   font-family: "Work Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/* shared styles */
+.display-flex {
+  display: flex;
+}
+
+.text-gray {
+  color: #424242;
+}
+
+.text-light-gray {
+  color: #727272;
+}
+
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary{
+  background-color: #FF900E;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  padding: 15px 22px;
+  border: none;
+  cursor: pointer;
+}
+
+main > section{
+  margin-top: 80px;
+}
+/* navbar related styles */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.brand {
+  color: rgb(19, 19, 19);
+  font-size: 2.40rem;
+  font-weight: 700;
+}
+
+.nav-items {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar,
+.banner, main {
+  width: 960px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* banner styles */
+.banner-content {
+  width: 577px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.banner-content *{
+  margin-top: 20px;
+}
+.banner-img {
+  width: 100%;
+}
+
+.banner-title {
+  color: rgb(19, 19, 19);
+  font-size: 3.50rem;
+  font-weight: 700; 
+}
+.banner-description{
+  font-size: 1rem;
+  font-weight: 400;
+}
+/* teams section */
+.teams{
+  align-items: center;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.team-img-container img{
+  width: 100%;
+  object-fit: cover;
+}
+.our-features{
+  margin-left: 80px;
+  max-width: 400px;
+}
+.features-title{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#quick-list{
+  font-weight: 500;
+}
+
+
+
+/* responsive media query  */
+@media screen and (max-width: 576px) {
+  .navbar, .nav-links{
+    flex-direction: column;
+  }
+  
 }
