@@ -130,6 +130,42 @@ main > section{
 .features-description{
   margin: 10px 0px 10px 0px;
 }
+/* features related styles */
+.features {
+  gap: 90px;
+}
+#features-section-title{
+  border-left: 3px solid #FF900E;
+  padding-left: 15px;
+}
+.featured-card{
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+.featured-card .featured-title{
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.featured-img{
+  width: 430px;
+}
+
+#experience-badge{
+  padding: 40px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -60px;
+  margin-top: -100px;
+}
+#experience-year{
+  font-size: 3rem;
+  font-weight: 700;
+}
 /* some facts related styles */
 .facts-container{
   display: grid;
@@ -169,8 +205,10 @@ main > section{
 .sponsors-companies{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  align-items: center;
 }
 .sponsors-companies img{
+  width: 80%;
   filter: grayscale(100%);
 }
 
