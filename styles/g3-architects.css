@@ -130,28 +130,93 @@ main > section{
 .features-description{
   margin: 10px 0px 10px 0px;
 }
+/* some facts related styles */
+.facts-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.fact-card{
+  border: 1px solid rgb(255, 144, 14);
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.fact-number{
+  font-size: 2.4em;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fact-name{
+  font-family: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.fact-description{
+  width: 370px;
+  margin: 10px 0px 20px 0px;
+}
+/* sponsors related styles */
+.sponsors-info{
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+.sponsors-companies{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.sponsors-companies img{
+  filter: grayscale(100%);
+}
 
 
-
-/* responsive media query  */
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .navbar,
   .nav-links,
   .teams{
     flex-direction: column;
   }
-  /* .banner-img{
-    display: none;
-  } */
-  .team-img-container{
-    grid-template-columns: repeat(1, 1fr);
+  .navbar,
+  .banner, main{
+    width: 0px;
+  }
+   .banner{
+    width: 100%;
+   }
+   .banner-title{
+    padding: 0;
+    text-align: center;
+   }
+   .banner-description{
+   padding: 0;
+    text-align: center;
+   }
+  .team-img-container, .facts-container{
+    grid-template-columns: 1fr;
+  }
+  .facts-container{
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    place-items: center;
+  }
+  .section-title, .fact-description{
+    text-align: center;
+    margin: 0 auto;
   }
   .our-features{
     margin-top: 20px;
   }
 }
 
-/* medium device */
+
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .teams{
     flex-direction: column;
@@ -160,4 +225,4 @@ main > section{
     margin-left: 50px auto;
     margin-top: 20px;
   }
-}
+} */
